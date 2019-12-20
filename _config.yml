@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 探索者的博客
+title: 流浪的步行者
 subtitle: '吴文杰'
 description: ''
 keywords:
@@ -102,3 +102,26 @@ deploy:
   type: git
   repository: https://github.com/wuwenjie-max/-wuwenjie-max-.Github.io
   branch: master
+  
+##new
+jsonContent:
+  dateFormat: MM-DD
+  pages:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    preview: true
+  posts:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    tags: [{
+      name: tag.name,
+      slug: tag.slug,
+      permalink: tag.permalink
+    }]
+    preview: true
