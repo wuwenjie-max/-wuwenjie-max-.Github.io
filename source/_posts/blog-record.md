@@ -2,6 +2,8 @@
 title: blog record
 date: 2019-12-19 13:39:12
 tags:
+	- 博客建立日志
+categories: 博客
 preview_text: 博客运行日志
 preview: imgs/preview/preview4.jpg
 ---
@@ -72,3 +74,6 @@ hexo+git+node.js安装后设置多PC
 依次执行git add .、git commit -m 'back up hexo files'（引号内容可改）、git push指令，保证xxx分支版本最新
 执行hexo d -g指令（在此之前，有时可能需要执行hexo clean），完成后就会发现，最新改动已经更新到master分支了，两个分支互不干扰！
 注意： 每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，最好先git pull **
+
+更换主题为gal
+thanks: https://github.com/ZEROKISEKI/hexo-theme-gal

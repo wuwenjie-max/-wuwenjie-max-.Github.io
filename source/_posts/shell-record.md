@@ -2,6 +2,8 @@
 title: shell record
 date: 2019-12-18 14:45:09
 tags:
+	- shell
+categories: 知识积累
 preview_text: 平时常用的一些shell命令
 preview: imgs/preview/preview3.jpg
 ---
