@@ -2,6 +2,8 @@
 title: shell record
 date: 2019-12-18 14:45:09
 tags:
+preview_text: 平时常用的一些shell命令
+preview: imgs/preview/preview3.jpg
 ---
 LINUX 常用命令记录
 1： ps -e -o ppid,stat,user |grep S |grep user |cut -c 1-5 |xargs kill -9 [清除sleep进程]

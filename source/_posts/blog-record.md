@@ -2,6 +2,8 @@
 title: blog record
 date: 2019-12-19 13:39:12
 tags:
+preview_text: 博客运行日志
+preview: imgs/preview/preview4.jpg
 ---
 博客运行记录
 
