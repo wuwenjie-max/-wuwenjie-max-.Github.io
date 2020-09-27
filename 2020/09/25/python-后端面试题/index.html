@@ -12,7 +12,7 @@
     
     
     
-    <title>archive_a | 流浪的步行者</title>
+    <title>python 后端面试题 | 流浪的步行者</title>
     <link href="https://wuwenjie-max.github.io/-wuwenjie-max-.Github.io" rel="prefetch" />
 
     
@@ -129,7 +129,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/-wuwenjie-max-.Github.io/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -220,19 +220,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://wuwenjie-max.github.io/-wuwenjie-max-.Github.io">流浪的步行者</a>
         >
-        <span>归档</span>
+        <span>python 后端面试题</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/-wuwenjie-max-.Github.io/archives">归档</a>
+                <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">python 后端面试题</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-09-25
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -240,60 +248,169 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/-wuwenjie-max-.Github.io/archives">归档</a>
+                    <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">python 后端面试题</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-09-25
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2020年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">python 后端面试题</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2020/01/15/%E6%97%A5%E8%AE%B0-20200115/">日记_20200115</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2020/01/11/%E6%97%A5%E8%AE%B0-20200111/">日记-20200111</a>
-                        <br>
-            
-             
-                        </div>
-                    <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
-                    <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-                 
-             
-                        <a href="/-wuwenjie-max-.Github.io/2019/12/29/%E8%AE%B0%E5%BD%95%E8%A6%81%E8%90%BD%E5%AE%9E%E7%9A%84%E6%84%9F%E6%83%B3/">记录要落实的感想</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2019/12/19/blog-record/">blog record</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2019/12/19/hello-world/">Hello World</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2019/12/18/shell-record/">shell record</a>
-                        <br>
-            
-             
-                        <a href="/-wuwenjie-max-.Github.io/2019/12/17/article-title/">article title</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <p>Python 语法及基础部分<br>    1: 基础类型中可变与不可变类型？<br>    不可变类型 整型 int 字符串 str 浮点型 float 元组 tuple<br>    可变类型   字典 dict 列表 list</p>
+<pre><code>2: 深拷贝与浅拷贝的区别？
+先要清楚python 中对象和变量是如何在内存中储存的
+基础类型数据以固定的大小保存在内存中
+变量对应保存的是一个引用地址， 地址对应的是内存中的数据， 浅拷贝只是复制了这个引用地址， 深拷贝是备份了整个对象；
+eg :
+import copy
+var = [1,[2,3]]
+c1 = copy.copy(var)
+c2 = copy.deepcopy(var)
+
+3: __new__() 与 __init__() 的区别？
+__new__ 作用与 __init__ 之前， 前者是创建实例对象， 后者是初始化实例对象。
+
+4：知道几种设计模式，简单介绍一下
+单例模式： 保证一个类只有一个实例，并且在其它地方都调用这个实例。保证唯一性。
+装饰器模式： 不改变元类代码和继承关系的情况下动态扩展类的功能。
+迭代器模式： 一种行为设计模式， 在不暴露底层表现形式的情况下遍历集合中所有的元素。
+命令模式： 将“请求”封装成对象，将其作为命令调用者和接收者的中介，而抽象出来的命令对象又使得能够对一系列请求进行特殊操作。 适用于请求调用者和请求接受者解耦，支持修改日志，撤销操作。
+
+5：编码和解码
+·编码/encode: 将unicode 字符串转换成特定编码格式对应的字节码的过程；
+·解码/decode: 将特定解码格式的字节码转换成 unicode 字符串；
+
+6：列表推导和生成器的优劣；
+列表推导式是将所有的值一次性加载到内存中， 简单直观
+生成器表达式在数据量大的时候使用， 返回的是生成器。
+
+7： 装饰器概念
+装饰器本身是一种函数， 包装别的函数和类， 在不改变原有函数和类的情况下增加操作。
+接收函数-》内部包装-》加操作-》返回包装后的新函数
+
+8： 手写使用装饰器的单例模式
+from functools import wraps
+def my_func(f):
+    @wraps(f)
+    def fn(*args, **kwargs):
+        print(&quot;new word&quot;)
+        return f(*args, **kwargs)
+    return fn
+@my_func    
+def test(num):
+    print(num*num)
+    return num*num
+
+x = test(10)
+
+9: 手写正则表达式
+邮箱： &apos;^[a-zA-Z0-9_.-]+@[a-zA-Z0-9]+\.[a-z]&apos;
+身份证： &apos;(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)&apos;
+
+10: 介绍垃圾回收机制 【引用计数/分代回收/孤立引用环】
+python 解释器对正在使用的对象保持计数， 当某个对象的引用次数将为0，标记为待释放对象， 当分配对象与待释放对象的差值高于阈值时垃圾回收启用；
+分代回收： python 将所有对象分为0，1，2 三代， 所有新建对象都是0代， 当某个0代对象经过垃圾回收后依然存在就归类为下一代； 垃圾回收时一定会检查0代对象， 一定次数0代清理后开始0，1代清理， 一定次数0，1代清理后0，1，2代清理。
+孤立引用环： 互相引用的环
+
+11： 多进程与多线程的区别； CPU密集型适合用什么？
+多线程或多进程完成任务，多线程共享内存空间， 多进程内存独立。
+同一个进程中的多个线程可以互相通信； 2个进程想通信必须通过中间代理；
+一个线程可以操作同个进程中的其它线程， 一个进程只能操作子进程；
+优缺点：多进程稳定性更好，某个子进程崩溃不会影响其它进程， 但是必须消耗硬件资源；
+        多线程效率对比多进程要高， 但是一个线程崩溃会导致整个进程崩溃；
+CPU密集型适合用多进程
+
+12： 进程通信的方式；
+进程间通信主要包括管道， 系统IPC（消息队列，信号量，共享储存），SOCKET
+
+13: 介绍协程， 为何比线程快；
+-个CPU 支持上万协程很容易， 很适合高并发处理， 协程能保留上次调用的状态， 进程和线程在阻塞和切换的时候会陷入系统调用， 花费时间。
+使用线程时要小心处理同步问题，协程不需要。</code></pre><p>算法排序部分<br>    14 手写快排， 堆排， 几种常用排序的算法复杂度，快排平均复杂度多少， 最坏情况如何优化？<br>    15 手写， 已知一个长度n的无序列表， 元素均为数值， 要求把所有间距为d的组合找出。<br>    16 手写， 一个列表 A=[A1,A2,’’’An], 把所有组合打印出来。<br>    17 手写， 1+2+3+…+10<strong>8;<br>    out = sum([x for x in range(1,10</strong>8)])<br>    18 用递归方法判断字符串是否为回文？<br>    def test(str):<br>        if len(str) &lt; 2:<br>            return True<br>        if str[0] != str[-1]:<br>            return False<br>        return test(str[1:-1])</p>
+<pre><code>19 单向链表长度未知，如何判断其中是否有环；
+常用思路是快慢指针
+class Node():
+    def __init__(self, num):
+        self.item = num
+        self.next = None
+
+def func(a:Node):
+    x = a
+    y = a
+    out = &apos;无环结构&apos;
+    while y.next and y.next.next:
+        x = x.next
+        y = y.next.next
+        if x == y:
+            out = &apos;有环结构&apos;
+            break
+    return out
+
+node1 = Node(1)
+node2 = Node(2)
+node3 = Node(3)
+node4 = Node(4)
+node5 = Node(5)
+
+node4.next = node5
+node3.next = node4
+node2.next = node3
+node1.next = node2
+node5.next = node1
+print(func(node1))
+
+20 单向链表使用快排进行排序；
+
+21 一个长度为n 的无序数字元素列表，求中位数。
+def func(num):
+    if len(num) &lt;= 1:
+        return num
+    a = len(num) // 2
+    if len(num)%2 == 0:
+        out = (num[a] + num[a-1])/2
+    else:
+        out = num[a]
+    return out
+
+22 如何遍历一个内部未知的文件夹【两种树的优先遍历方法】</code></pre><p>网络基础部分<br>    23 TCP与IP<br>    TCP 在传输层  IP 在网络层</p>
+<pre><code>24 socket 长连接是是什么意思？
+在一个TCP连接上可以连续发送多个数据包， 在TCP连接保持期间， 如果没有数据包需要发送， 需要双方发检测包维持此连接， 一般需要自己做在线保持，
+长连接是指建立socket 连接后不管是否使用都保持连接， 安全性较差；
+比如数据库连接就使用的 socket 长连接。如果短连接频发的通信会导致socket， 频繁的创建socket也会占用大量系统资源。
+
+25 select 和 epoll 了解程度， 区别。
+
+26 TCP UDP 区别【三次握手，四次挥手】
+TCP 协议： （在传输前先建立连接）面向连接（的通信传输协议），可靠的数据传输，失序， 无差错，无丢失， 无重复。
+用途： 适用于传输内容比较大， 网络传输稳定， 需要提供准确信息的情况。
+udp 协议： 面对无连接的服务， 不可靠， 发送时由发送端直接发送， 不考虑接收端。
+用途： 适用于网络较差， 对传输准确性要求低， 比如广播等
+
+27 TIME_WAIT 过多是因为什么。
+
+
+28 http 的完整过程。
+用户发起request -&gt; 域名解析 -》 TCP连接 -》 发送具体的http请求 -》 服务器端响应结果 -》 浏览器得到返回结果并解析 -》 浏览器渲染结果 【用户得到response】
+
+29 http连接方式  ？ get 和 post 的区别
+定义上来讲 get 是从服务端请求数据， post 是向服务端提交数据。
+get 请求数据会在url 中， post 则放在请求体中， 比get 安全性高一些。
+
+30 restful 了解程度？
+
+31 常见状态码及含义
+200： 操作成功
+403： 访问受限，授权过期。
+404： 资源，服务器未找到
+504： 网关超时，服务器作为网关和代理， 没有及时从上游服务器获取到请求。</code></pre>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -472,17 +589,17 @@
 
                 
                 <li>
-                    <a href="/-wuwenjie-max-.Github.io/archives/2020/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/-wuwenjie-max-.Github.io/archives/2020/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/-wuwenjie-max-.Github.io/archives/2020/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -490,17 +607,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 11.561691063460305px;" class="tag-cloud-link">生活</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12.303245748391149px;" class="tag-cloud-link">生活</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E7%BA%AA%E5%BF%B5/" style="font-size: 13.761855605387119px;" class="tag-cloud-link">纪念</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E7%BA%AA%E5%BF%B5/" style="font-size: 11.273744332574923px;" class="tag-cloud-link">纪念</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%97%A5%E5%BF%97/" style="font-size: 14.965008230098377px;" class="tag-cloud-link">博客建立日志</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%97%A5%E5%BF%97/" style="font-size: 17.042222792215803px;" class="tag-cloud-link">博客建立日志</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/shell/" style="font-size: 18.79711584841791px;" class="tag-cloud-link">shell</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/shell/" style="font-size: 14.40238721841024px;" class="tag-cloud-link">shell</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E6%84%9F%E6%83%B3-%E8%AE%A1%E5%88%92/" style="font-size: 8.590318432120366px;" class="tag-cloud-link">感想+计划</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E6%84%9F%E6%83%B3-%E8%AE%A1%E5%88%92/" style="font-size: 8.708084982300692px;" class="tag-cloud-link">感想+计划</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 11.995986103975293px;" class="tag-cloud-link">日记</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 12.073961951235527px;" class="tag-cloud-link">日记</a>
     
 </div>
                 
