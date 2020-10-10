@@ -288,10 +288,24 @@ test.test(3)
 [3, 1, 1, 0, 1, 4, 9]</code></pre><p>第二次调用函数f1时 分配给内部变量 a 的内存地址是第一次时创建的， 称变量 a 为自由变量。</p>
 <p>维基对闭包的概念解释：<br>“在计算机科学中， 闭包（英语：Closure），又称词法闭包（Lexical Closure）或函数闭包（function closures），是引用了自由变量的函数。这个被引用的自由变量将和这个函数一同存在，<br>即使已经离开了创造它的环境也不例外。所以，有另一种说法认为闭包是由函数和与其相关的引用环境组合而成的实体。闭包在运行时可以有多个实例，不同的引用环境和相同的函数组合可以产<br>生不同的实例。”</p>
 <p>简单白话  一个函数中定义中引用了函数之外的变量，并且该函数可以在定义环境之外被执行。 这样的函数我们称之为闭包。</p>
-<p>闭包示例<br>def hellocounter (name):<br>  count=0<br>  def counter():<br>    nonlocal count<br>    count+=1<br>    print(‘Hello,’+name+’,’+str(count)+’ access!’)<br>  return counter</p>
-<p>hello = hellocounter(‘ma6174’)<br>hello()<br>hello()<br>hello()</p>
-<p>Hello,ma6174,1 access!<br>Hello,ma6174,2 access!<br>Hello,ma6174,3 access!</p>
-<p>闭包特性： 自由变元可以记录闭包函数被调用的信息，以及闭包函数的一些计算结果中间值。而且被自由变量记录的值，在下次调用闭包函数时依旧有效。<br>当保存当前运行环境时可以用闭包。</p>
+<p>闭包示例</p>
+<pre><code>def hellocounter (name):
+  count=0
+  def counter():
+    nonlocal count
+    count+=1
+    print(&apos;Hello,&apos;+name+&apos;,&apos;+str(count)+&apos; access!&apos;)
+  return counter
+
+hello = hellocounter(&apos;ma6174&apos;)
+hello()
+hello()
+hello()
+
+
+Hello,ma6174,1 access!
+Hello,ma6174,2 access!
+Hello,ma6174,3 access!</code></pre><p>闭包特性： 自由变元可以记录闭包函数被调用的信息，以及闭包函数的一些计算结果中间值。而且被自由变量记录的值，在下次调用闭包函数时依旧有效。<br>当保存当前运行环境时可以用闭包。</p>
 
     </div>
 </article>
@@ -354,6 +368,12 @@ test.test(3)
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/-wuwenjie-max-.Github.io/2020/10/10/staticmethod%E4%B8%8Eclassmethod/">staticmethod与classmethod</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/-wuwenjie-max-.Github.io/2020/10/09/python-%E9%97%AD%E5%8C%85%E4%B8%8E%E8%87%AA%E7%94%B1%E5%8F%98%E9%87%8F/">python 闭包与自由变量</a>
                 </span>
             </li>
@@ -403,12 +423,6 @@ test.test(3)
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/-wuwenjie-max-.Github.io/2019/12/18/shell-record/">shell record</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/-wuwenjie-max-.Github.io/2019/12/17/article-title/">article title</a>
                 </span>
             </li>
             
@@ -472,12 +486,6 @@ test.test(3)
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/-wuwenjie-max-.Github.io/2020/09/25/python-%E5%90%8E%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">python 后端面试题</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/-wuwenjie-max-.Github.io/2020/09/30/jpg-%E5%A2%9E%E5%8A%A0%E5%9D%90%E6%A0%87%E7%B3%BB%E5%B9%B6%E8%BD%AC%E9%80%8F%E6%98%8E%E5%9B%BE/">jpg 增加坐标系并转透明图</a>
                 </span>
             </li>
@@ -485,6 +493,12 @@ test.test(3)
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/-wuwenjie-max-.Github.io/2020/10/09/python-%E9%97%AD%E5%8C%85%E4%B8%8E%E8%87%AA%E7%94%B1%E5%8F%98%E9%87%8F/">python 闭包与自由变量</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/-wuwenjie-max-.Github.io/2020/10/10/staticmethod%E4%B8%8Eclassmethod/">staticmethod与classmethod</a>
                 </span>
             </li>
             
@@ -517,17 +531,17 @@ test.test(3)
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12.8613128733113px;" class="tag-cloud-link">生活</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12.849025956041865px;" class="tag-cloud-link">生活</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E7%BA%AA%E5%BF%B5/" style="font-size: 18.886390422495985px;" class="tag-cloud-link">纪念</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E7%BA%AA%E5%BF%B5/" style="font-size: 11.813624924784072px;" class="tag-cloud-link">纪念</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%97%A5%E5%BF%97/" style="font-size: 16.378008230709447px;" class="tag-cloud-link">博客建立日志</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%97%A5%E5%BF%97/" style="font-size: 17.49276111646895px;" class="tag-cloud-link">博客建立日志</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 16.360566963649106px;" class="tag-cloud-link">日记</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 9.000809512141288px;" class="tag-cloud-link">日记</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/%E6%84%9F%E6%83%B3-%E8%AE%A1%E5%88%92/" style="font-size: 17.12679303994944px;" class="tag-cloud-link">感想+计划</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/%E6%84%9F%E6%83%B3-%E8%AE%A1%E5%88%92/" style="font-size: 19.370671048502913px;" class="tag-cloud-link">感想+计划</a>
     
-    <a href="/-wuwenjie-max-.Github.io/tags/shell/" style="font-size: 11.73772942643118px;" class="tag-cloud-link">shell</a>
+    <a href="/-wuwenjie-max-.Github.io/tags/shell/" style="font-size: 10.872957496916897px;" class="tag-cloud-link">shell</a>
     
 </div>
                 
